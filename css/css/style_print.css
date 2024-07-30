@@ -1,0 +1,86 @@
+/**
+ * style_print.css :: printer-friendly css
+ *
+ * Note: please specify this file as "media = print"
+ */
+
+body, body.container, body.header {
+	margin-top: 0px;
+}
+body #environmentNotice {
+	display: none;
+}
+
+/* don't print the url's for links */
+body a:link:after, body a:visited:after {
+	content: "";
+}
+
+/* don't print the sharethis buttons */
+div.addthis_toolbox {
+	display: none;
+}
+
+/* don't print the top-bar, or the member-bar */
+#top-bar, #member-bar {
+	display: none;
+}
+
+/* slim & center the nav */
+#header nav ul {
+	width: 100%;
+	text-align: center;
+}
+#header nav ul li {
+	float: none;
+	display: inline;
+	white-space: nowrap;
+	padding: 0.2em 0.9em 0px 0.9em;
+}
+
+/* slim & center the subnav */
+#content .subnavList {
+	margin-top: 0.5em;
+	width: 100%;
+	text-align: center;
+}
+#content .subnavList li {
+	float: none;
+	display: inline;
+	white-space: nowrap;
+}
+
+/**
+ * hide the nav & subnav
+ */
+#header nav {
+	display: none;
+}
+#content ul.subnavList {
+	display: none;
+}
+
+/* header & main header image */
+#header a.logo {
+}
+#header {
+}
+.printOnly.topLink {
+	font-weight: 700;
+	font-style: italic;
+	margin: 0.0em auto 0.5em auto;
+}
+
+/**
+ * single recipes
+ */
+body.kitchen.recipe .recipe .backgroundImage {
+	display: none;
+}
+
+/**
+ * doodads
+ */
+.printOnly {
+	display: block;
+}
