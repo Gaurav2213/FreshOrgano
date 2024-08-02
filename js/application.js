@@ -373,217 +373,32 @@ function urldecode ( str ) {
 	}
 	return str;
 }
-/**
- * Session Utilities
- */
 
-/**
- * Session Utilities
- */
-// $(document).ready(function() {
-// 	var parsed_data = "";
-// 	$.ajax({
-// 		method: "POST",
-// 		url: "/account/readGuestSession",
-// 		headers: {
-// 			'X-CSRF-Token': $('[name="_csrfToken"]').val()
-// 		},
-// 		success: function(data) {
-// 			parsed_data = JSON.parse(data);
-// 			setTimeout(function() {
-// 				$("#ValidateAccountSignupShipToNameFirst").val(parsed_data['first_name']);
-// 				$("#ValidateAccountSignupShipToNameLast").val(parsed_data['last_name']);
-// 				$("#Company").val(parsed_data['company']);
-// 				$("#ValidateAccountSignupShipToHomePhone").val(parsed_data['home_phone']);
-// 				$("#ValidateAccountSignupShipToWorkPhone").val(parsed_data['work_phone']);
-// 				$("#ValidateAccountSignupShipToCellPhone").val(parsed_data['cell_phone']);
-// 				$("#ValidateAccountSignupShipToAddress1").val(parsed_data['address1']);
-// 				$("#ValidateAccountSignupShipToAddress2").val(parsed_data['address2']);
-// 				$("#ValidateAccountSignupShipToCity").val(parsed_data['city']);
-// 				$("#ValidateAccountSignupShipToState").val(parsed_data['state']);
-// 				$("#ValidateAccountSignupShipToZip").val(parsed_data['zip']);
-// 				$("#ValidateAccountSignupDeliveryInstructions").val(parsed_data['delivery_note']);
-// 				$("#giftMessageText").val(parsed_data['giftMessageText']);
-// 				$("#cart_notes0").val(parsed_data['cart_notes0']);
-// 				$("#cart_notes1").val(parsed_data['cart_notes1']);
-// 				$("#cart_notes2").val(parsed_data['cart_notes2']);
-// 				$("#cart_notes3").val(parsed_data['cart_notes3']);
-// 				$("#cart_notes4").val(parsed_data['cart_notes4']);
-// 				$("#cart_notes5").val(parsed_data['cart_notes5']);
-// 				$("#cart_notes6").val(parsed_data['cart_notes6']);
-// 				$("#cart_notes7").val(parsed_data['cart_notes7']);
-// 				$("#cart_notes8").val(parsed_data['cart_notes8']);
-// 				$("#cart_notes9").val(parsed_data['cart_notes9']);
-// 				$("#cart_notes10").val(parsed_data['cart_notes10']);
-// 			}, 200);
-// 		},
-// 	})
-// });
 
-// $(function() {
-// 	$("#ValidateAccountSignupEmail").blur(function() {
-// 		$.ajax({
-// 			method: "POST",
-// 			url: "<?= $this->Url->build(['controller' => 'Accounts', 'action' => 'signupvalidateemail']) ?>",
-// 			data: {
-// 				email: $("#ValidateAccountSignupEmail").val()
-// 			},
-// 			headers: {
-// 				'X-CSRF-Token': $('[name="_csrfToken"]').val()
-// 			},
-// 			success: function(data) {
-// 				var parsed_data = JSON.parse(data);
-// 				console.log(parsed_data);
-// 				if (data == 'true') {
-// 					$('#email_note').html('<span class="signup-alert-danger">There\'s already an account with this email address. Want to sign in, instead?</span>');
-// 					$("#ValidateAccountSignupEmail").addClass('signup-text-danger');
-// 				} else if (data == 'false' && $("#ValidateAccountSignupEmail").val().length < 2) {
-// 					$('#email_note').html('<span class="signup-alert-danger">Email is required. It will be your login username.</span>');
-// 					$("#ValidateAccountSignupEmail").addClass('signup-text-danger');
-// 				} else {
-// 					$('#email_note').html('<span class="">This email address is available and will be your login username.</span>');
-// 					$("#ValidateAccountSignupEmail").removeClass('signup-text-danger');
-// 				}
+const addToCartButtons = document.querySelectorAll('.add-to-cart'); // Select all "Add to Cart" buttons
 
-// 			},
-// 		})
-// 	})
-// })
-// event handlers for input changes
-// $(function() {
-// 	$("#ValidateAccountSignupShipToNameFirst").blur(function() {
-// 		writeSessionData('first_name', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToNameLast").blur(function() {
-// 		writeSessionData('last_name', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#Company").blur(function() {
-// 		writeSessionData('company', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToHomePhone").blur(function() {
-// 		writeSessionData('home_phone', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToWorkPhone").blur(function() {
-// 		writeSessionData('work_phone', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToCellPhone").blur(function() {
-// 		writeSessionData('cell_phone', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToAddress1").blur(function() {
-// 		writeSessionData('address1', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToAddress2").blur(function() {
-// 		writeSessionData('address2', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToCity").blur(function() {
-// 		writeSessionData('city', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToState").blur(function() {
-// 		writeSessionData('state', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupShipToZip").blur(function() {
-// 		writeSessionData('zip', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#ValidateAccountSignupDeliveryInstructions").blur(function() {
-// 		writeSessionData('delivery_note', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#giftMessageText").blur(function() {
-// 		writeSessionData('giftMessageText', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes0").blur(function() {
-// 		writeSessionData('cart_notes0', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes1").blur(function() {
-// 		writeSessionData('cart_notes1', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes2").blur(function() {
-// 		writeSessionData('cart_notes2', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes3").blur(function() {
-// 		writeSessionData('cart_notes3', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes4").blur(function() {
-// 		writeSessionData('cart_notes4', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes5").blur(function() {
-// 		writeSessionData('cart_notes5', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes6").blur(function() {
-// 		writeSessionData('cart_notes6', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes7").blur(function() {
-// 		writeSessionData('cart_notes7', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes8").blur(function() {
-// 		writeSessionData('cart_notes8', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes9").blur(function() {
-// 		writeSessionData('cart_notes9', this.value)
-// 	})
-// })
-// $(function() {
-// 	$("#cart_notes10").blur(function() {
-// 		writeSessionData('cart_notes10', this.value)
-// 	})
-// })
-// // do the deed
-// function writeSessionData(field, value) {
-// 	if (value.length < 1) {
-// 		value = ' '
-// 	}
-// 	$.ajax({
-// 		method: "POST",
-// 		url: "/account/saveGuestSession",
-// 		data: {
-// 			field: field,
-// 			value: value
-// 		},
-// 		headers: {
-// 			'X-CSRF-Token': $('[name="_csrfToken"]').val()
-// 		},
-// 	})
-// }
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', (event) => {
+	console.log("Button Clicked!")
+    // Get data from button
+    const productId = event.target.dataset.productId;
+    const productName = event.target.dataset.productName;
+    const productPrice = parseFloat(event.target.dataset.productPrice); // Convert price to number
+
+    // Update Cart Object (replace with your cart data storage)
+    let cart = JSON.parse(localStorage.getItem('cart')) || { items: [] };
+    const existingItemIndex = cart.items.findIndex(item => item.id === productId);
+
+    if (existingItemIndex !== -1) {
+      cart.items[existingItemIndex].quantity++;
+    } else {
+      cart.items.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart)); // Save cart to localStorage
+
+    // Redirect to Cart page
+    window.location.href = 'cart.html';
+  });
+});
+
