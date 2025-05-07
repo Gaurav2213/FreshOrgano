@@ -7,7 +7,7 @@
 ## 📸 Project Preview
 
 | Home Page : 
-[Home](Screenshot/HomePage.png)
+![Homepage](Screenshot/HomePage.png)
 
 Cart Page :   
 [Cart](Screenshot/Mycart.png)                        
