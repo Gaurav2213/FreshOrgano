@@ -1,6 +1,6 @@
 # 🥦 FreshOrgano Grocery – Frontend E-Commerce Website
 
-**FreshOrgano** is a responsive, fully client-side e-commerce website for browsing and purchasing fresh organic grocery products. This project is built using **HTML**, **CSS**, **JavaScript**, and **jQuery** — with a focus on clean UI, usability, and category-based product browsing.
+**FreshOrgano** is a responsive, fully client-side e-commerce website for browsing and purchasing fresh organic grocery products. This project is built using **HTML**, **CSS**, **JavaScript**, and  — with a focus on clean UI, usability, and category-based product browsing.
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Home Page                        | Cart Page                        |
 |----------------------------------|----------------------------------|
-| ![Home](Screenshot/Home%20Page.png)   | ![Cart](Screenshot/My%20cart.png)   |
+| ![Home](Screenshot/HomePage.png)   | ![Cart](Screenshot/Mycart.png)   |
 
 | Pantry Page                      | Dairy Page                       |
 |----------------------------------|----------------------------------|
@@ -16,7 +16,7 @@
 
 | Recipes Page                     | Contact Us Page                  |
 |----------------------------------|----------------------------------|
-| ![Recipes](ScreenShot/Organic%20Recipe.png) | ![Contact](Screenshot/Contact%20Us.png) |
+| ![Recipes](ScreenShot/OrganicRecipe.png) | ![Contact](Screenshot/ContactUs.png) |
 
 
 ---
@@ -28,8 +28,7 @@
 - 🧺 Cart system with categorized item sections
 - 📋 Organic recipes with full ingredients & instructions
 - 📍 Google Maps-based contact page
-- 🔀 Responsive design using Bootstrap & custom CSS
-- 🧠 jQuery-powered interactions
+- 🔀 Responsive design using  custom CSS
 
 ---
 
@@ -52,5 +51,4 @@
 
 ---
 
-## 📁 Folder Structure (Simplified)
 
