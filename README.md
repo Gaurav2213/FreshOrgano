@@ -6,12 +6,14 @@
 
 ## 📸 Project Preview
 
-[Homepage](ScreenShot/HomePage.png)
-[Cart](ScreenShot/Mycart.png)
-[Pantry](ScreenShot/Pantry.png)
-[Dairy](ScreenShot/Dairy.png)
-[Recipes](ScreenShot/OrganicRecipe.png)
-[Contact](ScreenShot/ContactUs.png)
+| Page         | Screenshot                           |
+|--------------|----------------------------------------|
+| Home Page    | ![Home](ScreenShot/HomePage.png)       |
+| Cart Page    | ![Cart](ScreenShot/Mycart.png)         |
+| Pantry Page  | ![Pantry](ScreenShot/Pantry.png)       |
+| Dairy Page   | ![Dairy](ScreenShot/Dairy.png)         |
+| Recipes Page | ![Recipes](ScreenShot/OrganicRecipe.png) |
+
  
 
 
