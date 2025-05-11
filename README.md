@@ -6,26 +6,13 @@
 
 ## 📸 Project Preview
 
-| Home Page : 
-![Homepage](Screenshot/HomePage.png)
-
-Cart Page :   
-[Cart](Screenshot/Mycart.png)                        
-
-
- Pantry Page :
-[Pantry](Screenshot/Pantry.png)                  
-
- Dairy Page  :
+[Homepage](ScreenShot/HomePage.png)
+[Cart](ScreenShot/Mycart.png)
+[Pantry](ScreenShot/Pantry.png)
+[Dairy](ScreenShot/Dairy.png)
+[Recipes](ScreenShot/OrganicRecipe.png)
+[Contact](ScreenShot/ContactUs.png)
  
- [Dairy](ScreenShot/Dairy.png) 
-
-git commity
-giot comiitRecipes Page :
-[Recipes](ScreenShot/OrganicRecipe.png)                    
-
- Contact Us Page  :              
-[Contact](Screenshot/ContactUs.png) 
 
 
 ---
